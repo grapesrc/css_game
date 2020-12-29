@@ -1,0 +1,202 @@
+#gamebox {
+  position: relative;
+  top: 50px;
+  left: 450px;
+  width: 400px;
+  height: 500px;
+  border: #000 1px solid;
+  cursor: url(play.png), auto;
+  background: #fff;
+}
+  .wall1 { /*Drawing some rock*/
+    width: 50px;
+    height: 500px;
+    background: #000;
+    background: #777;
+  }
+  .rock2 {
+    position: relative;
+    top:-500px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    background: #000;
+    background: #777;
+    animation-duration:1.393s;
+    animation-name:anime1;
+    animation-iteration-count:100;
+  }
+  .rock3 {
+    position: relative;
+    top:-550px;
+    left: 100px;
+    width: 50px;
+    height: 50px;
+    background: #000;
+    background: #777;
+    animation-duration:2.7234s;
+    animation-name:anime2;
+    animation-iteration-count:100;
+  }
+  .rock4 {
+    position: relative;
+    top:-600px;
+    left: 150px;
+    width: 50px;
+    height: 50px;
+    background: #000;
+    background: #777;
+    animation-duration:0.9794s;
+    animation-name:anime3;
+    animation-iteration-count:100;
+  }
+  .rock5 {
+    position: relative;
+    top:-650px;
+    left: 200px;
+    width: 50px;
+    height: 50px;
+    background: #000;
+    background: #777;
+    animation-duration:3.645s;
+    animation-name:anime4;
+    animation-iteration-count:100;
+  }
+  .rock6 {
+    position: relative;
+    top:-700px;
+    left: 250px;
+    width: 50px;
+    height: 50px;
+    background: #000;
+    background: #777;
+    animation-duration:1.649s;
+    animation-name:anime5;
+    animation-iteration-count:100;
+  }
+  .rock7 {
+    position: relative;
+    top:-750px;
+    left: 300px;
+    width: 50px;
+    height: 50px;
+    background: #000;
+    background: #777;
+    animation-duration:2.9234s;
+    animation-name:anime6;
+    animation-iteration-count:100;
+  }
+  .wall8 {
+    position: relative;
+    top:-800px;
+    left: 350px;
+    width: 50px;
+    height: 450px;
+    background: #000;
+    background: #777;
+  }
+  .wall9 {
+    position: relative;
+    top: -750px;
+    left:  0px;
+    width: 400px;
+    height: 50px;
+    background: #000;
+    background: #777;
+  }
+/**************************************/
+  @keyframes anime1 {/*Animation*/
+    0% {
+        top: -500;
+    }
+    100% {
+        top:-50px;
+    }
+  }@keyframes anime2 {
+    0% {
+        top:-550px;
+    }
+    100% {
+        top: -100px;
+    }
+  }@keyframes anime3 {
+    0% {
+        top:-600px;
+    }
+    100% {
+        top:-150px;
+    }
+  }@keyframes anime4 {
+    0% {
+        top:-650px;
+    }
+    100% {
+        top:-200px;
+    }
+  }@keyframes anime5 {
+    0% {
+        top:-700px;
+    }
+    100% {
+        top:-250px;
+    }
+  }
+  @keyframes anime6 {
+    0% {
+        top:-750px;
+    }
+    50%{
+      animation-duration:calc(animation-duration - 0.08s);
+    }
+    100% {
+        top:-300px;
+    }
+  }
+  /***********************************************/
+  .wall1:hover{/*If the rock hits the player*/
+    background: #f00;
+  }
+  .rock2:hover {
+    background: #f00;
+    width: 50px;
+    height: 50px;
+    animation-play-state:paused;
+  }
+  .rock3:hover {
+    background: #f00;
+    width: 50px;
+    height: 50px;
+    animation-play-state:paused;
+  }
+  .rock4:hover {
+    background: #f00;
+    width: 50px;
+    height: 50px;
+    animation-play-state:paused;
+  }
+  .rock5:hover {
+    background: #f00;
+    width: 50px;
+    height: 50px;
+    animation-play-state:paused;
+  }
+  .rock6:hover {
+    background: #f00;
+    width: 50px;
+    height: 50px;
+    animation-play-state:paused;
+  }
+  .rock7:hover {
+    background: #f00;
+    width: 50px;
+    height: 50px;
+    animation-play-state:paused;
+  }
+  .wall8:hover{
+    background: #f00;
+  }
+  .wall9:hover{
+    background: #f00;
+  }
+  
+  
